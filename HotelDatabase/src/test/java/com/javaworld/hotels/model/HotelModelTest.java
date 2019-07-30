@@ -36,6 +36,15 @@ public class HotelModelTest extends TestCase {
 			assertEquals(h.getVille(),"Londres");
 		}
 	}
+	
+	public void testTrouveHotelsParVille3() {
+		HotelModel finder = new HotelModel();
+		List<Hotel> hotels = finder.trouveHotelsParVille("Amsterdam");
+		assertTrue(hotels.size() > 0);
+		for(Hotel h : hotels) {
+			assertEquals(h.getVille(),"Amsterdam");
+		}
+	}
 
 	public void testTrouveHotelsParVilleVide() {
 		HotelModel finder = new HotelModel();
@@ -52,7 +61,7 @@ public class HotelModelTest extends TestCase {
 	public void testTrouveVillesDiponibles() {
 		HotelModel trouveur = new HotelModel();
 		String[] villes = trouveur.trouveVillesDiponibles();
-		assertEquals(villes.length, 2);
+		assertEquals(villes.length, 3);
 	}
 
 }

@@ -26,7 +26,7 @@ public class HotelModel {
     /**
      * La liste de toutes les villes connues dans la base de données.
      */
-    private static String[] villes = { "Paris", "Londres" };
+    private static String[] villes = { "Paris", "Londres", "Amsterdam" };
 
     /**
      * La liste de tous les hotels de la base de données.
@@ -36,6 +36,8 @@ public class HotelModel {
             new Hotel("Hotel Etoile", "Place de l'Etoile", "Paris", 4),
             new Hotel("Hotel Vendome", "Place Vendome", "Paris", 5),
             new Hotel("Hotel Hilton", "Trafalgar Square", "Londres", 4),
+			new Hotel("Hotel De Passes", "Place Pigalle", "Paris", 7),
+			new Hotel("Maison d'hote", "Quartier rouge", "Amsterdam", 7),
             new Hotel("Hotel Ibis", "The City", "Londres", 3), };
 
     /**
